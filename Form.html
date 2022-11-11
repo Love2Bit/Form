@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran</title>
+  <link rel="icon" href="asset/Images/logo-ukdw.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    .rating ul li i {
+      color: orange;
+    }
+
+    a {
+      color: grey;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: black;
+    }
+
+    @media (max-width: 575.98px) {
+      #search {
+        margin-right: 4px;
+      }
+
+    }
+
+    @media (max-width: 991.98px) {
+      #search input {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 1280.720px) {
+      #search input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header section -->
+  <header>
+
+    <!-- first header -->
+
+    <div class="container">
+      <div class="row">
+        <!-- logo -->
+        <div class="col-3 col-md-1 col-sm-4 col-lg-1 mt-2">
+          <img src="asset/images/logo-ukdw.png" alt="logo" width="60" height="80">
+        </div>
+        <!-- search bar -->
+        <div id="title" class="col-4 col-md-11 col-sm-8 col-lg-6">
+          <h1 style="font-size: 150%; font-weight: bold;" class="pt-3">FORMULIR PENDAFTARAN MAHASISWA BARU</h1>
+          <h1 style="font-size: 150%; font-weight: bold; color: darkgreen;">UNIVERSITAS KRISTEN DUTA WACANA</h1>
+        </div>
+
+        <!-- seleksi -->
+        <div class="selection col-2 pt-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Jenis Seleksi</option>
+            <option value="1">Seleksi Prestasi</option>
+            <option value="2">Seleksi Mandiri</option>
+            <option value="3">Seleksi Reguler</option>
+            <option value="4">Seleksi Kedokteran</option>
+            <option value="5">Seleksi Teologi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- Services Section -->
+
+  <section class="container pt-4">
+
+    <div class="card border-success">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <div class="seleksi col-12">
+              <div class="col-2">
+                <p style="font-weight: bold;">A. Pilihan Tanggal Seleksi : <input type="date" class="form-control mt-2"
+                    id="validationCustom03" placeholder="Tanggal Lahir" required>
+              </div>
+            </div>
+            <div class="col-5 dropend">
+              <p style="font-weight: bold;">B. Pilihan Program Studi</p>
+              <p style="font-weight: bold;">Pilihan 1</p>
+              <select class="form-select" aria-label="Default select example">
+                <option disabled selected>Pilih Program Studi 1</option>
+                <option value="1">Teologi - Filsafat Keilahian</option>
+                <option value="2">Arsitektur dan Desain - Arsitektur</option>
+                <option value="3">Arsitektur dan Desain - Desain Produk</option>
+                <option value="4">Bisnis - Manajemen</option>
+                <option value="5">Bisnis - Akuntansi</option>
+                <option value="6">Teknologi Informasi - Informatika</option>
+                <option value="7">Teknologi Informasi - Sistem Informasi</option>
+                <option value="8">Kependidikan & Humaniora - Pendidikan Bahasa Inggris</option>
+                <option value="9">Kependidikan & Humaniora - Studi Humaniora</option>
+                <option value="10">Kedokteran - Kedokteran</option>
+              </select>
+            </div>
+            <div class="col-5 dropend">
+              <p style="font-weight: bold;">&ensp;</p>
+              <p style="font-weight: bold;">Pilihan 2</p>
+              <select class="form-select" aria-label="Default select example">
+                <option disabled selected>Pilih Program Studi 2</option>
+                <option value="1">Teologi - Filsafat Keilahian</option>
+                <option value="2">Arsitektur dan Desain - Arsitektur</option>
+                <option value="3">Arsitektur dan Desain - Desain Produk</option>
+                <option value="4">Bisnis - Manajemen</option>
+                <option value="5">Bisnis - Akuntansi</option>
+                <option value="6">Teknologi Informasi - Informatika</option>
+                <option value="7">Teknologi Informasi - Sistem Informasi</option>
+                <option value="8">Kependidikan & Humaniora - Pendidikan Bahasa Inggris</option>
+                <option value="9">Kependidikan & Humaniora - Studi Humaniora</option>
+                <option value="10">Kedokteran - Kedokteran</option>
+              </select>
+            </div>
+            <div class="data-diri pt-5">
+              <p style="font-weight: bold;">C. Data Diri Calon Mahasiswa</p>
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                    placeholder="Nama Lengkap" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Mohon input data
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Tempat Lahir</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Tempat Lahir" required>
+                  <div class="invalid-feedback">
+                    Dimohon masukan data.
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <label for="validationCustom03" class="form-label">Tanggal Lahir</label>
+                  <input type="date" class="form-control" id="validationCustom03" placeholder="Tanggal Lahir" required>
+                  <div class="invalid-feedback">
+                    Dimohon masukan tanggal lahir
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <label for="validationCustom04" class="form-label">Agama</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Pilih salah satu</option>
+                    <option value="1">Kristen</option>
+                    <option value="2">Katolik</option>
+                    <option value="3">Islam</option>
+                    <option value="4">Hindu</option>
+                    <option value="5">Buddha</option>
+                    <option value="6">Kong Hu Chu</option>
+                    <option value="7">Penghayat Kepercayaan</option>
+                    <option value="8">Lain - lain</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Mohon pilih salah satu.
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <label for="validationCustom05" class="form-label">Golongan Darah</label>
+                  <select class="form-select" id="validationCustom05" required>
+                    <option selected disabled value="">Pilih salah satu</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">AB</option>
+                    <option value="4">O</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Mohon pilih salah satu.
+                  </div>
+                </div>
+                <!-- Kewarganegaraan -->
+                <div class="col-md-3">
+                  <label for="validationCustom06" class="form-label">Kewarganegaraan</label>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="subject" id="no" value="WNI" checked>
+                    <label class="form-check-label" for="inlineRadioButton">WNI</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input otherCountry" type="radio" name="subject" id="other" value="WNA">
+                    <label class="form-check-label" for="inlineRadioButton">WNA</label>
+                  </div>
+                  <input type="text" class="form-control col-md-4 otherCountry" id="othercountry" name="otherCountry"
+                    placeholder="Negara" disabled required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <!-- KTP -->
+                <div class="col-md-3">
+                  <label for="validationCustom07" class="form-label">KTP/NIK</label>
+                  <input type="number" class="form-control" id="validationCustom07" placeholder="Masukan NIK" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Mohon input data
+                  </div>
+                </div>
+                <!-- No Handphone -->
+                <div class="col-md-3">
+                  <label for="validationCustom08" class="form-label">No Handphone (Aktif)</label>
+                  <input type="number" class="form-control" id="validationCustom08" placeholder="No Handphone" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Mohon input data
+                  </div>
+                </div>
+                <!-- Alamat Email -->
+                <div class="col-md-4">
+                  <label for="validationCustomEmail" class="form-label has-validation">Alamat Email</label>
+                  <div class="input-group" for="validationCustomEmail">
+                    <input type="text" class="form-control" id="validationCustomEmail" placeholder="Email"
+                      aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="gmail.com" id="validationCustomEmail"
+                      aria-label="gmail">
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Kebutuhan Khusus -->
+                <div class="col-12">
+                  <label class="form-label has-validation" for="validationCustom09">Kewarganegaraan</label>
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="kebutuhan" id="other validationCustom09"
+                            value="Tuna Netra">
+                          <label class="form-check-label" for="inlineCheckbox1">Tuna Netra</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="kebutuhan" id="other validationCustom09"
+                            value="Tuna Wicara">
+                          <label class="form-check-label" for="inlineCheckbox1">Tuna Wicara</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="kebutuhan" id="other validationCustom09"
+                            value="Tuna Rungu">
+                          <label class="form-check-label" for="inlineCheckbox1">Tuna Rungu</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="kebutuhan" id="other validationCustom09"
+                            value="Tuna Daksa">
+                          <label class="form-check-label" for="inlineCheckbox1">Tuna Daksa</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="kebutuhan" id="other validationCustom09"
+                            value="Tuna Grahita">
+                          <label class="form-check-label" for="inlineCheckbox1">Tuna Grahita</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" onclick="toggleEnable('input1')"
+                            name="kebutuhan" id="other validationCustom09" value="Lainnya">
+                          <label class="form-check-label" for="inlineCheckbox1">Lainnya</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="col-md-10">
+                          <input type="text" class="form-control" id="input1 validationCustom09" placeholder="Lainnya"
+                            disabled required>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- Alamat -->
+                <div class="col-lg-12">
+                  <div class="col-md-4">
+                    <p style="font-weight: bold;">Alamat asal (sesuai KTP)</p>
+                    <div class="card border-success">
+                      <div class="card-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kelurahan</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kelurahan" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kecamatan</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kecamatan" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kabupaten/Kodya</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kabupaten/Kodya" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Provinsi</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Provinsi" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kode Pos</label>
+                            <input type="number" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kode Pos" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Alamat Surat -->
+                <div class="col-4">
+                  <div class="col-md-12">
+                    <p style="font-weight: bold;">Alamat asal (sesuai KTP)</p>
+                    <div class="card border-success">
+                      <div class="card-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kelurahan</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kelurahan" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kecamatan</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kecamatan" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kabupaten/Kodya</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kabupaten/Kodya" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Provinsi</label>
+                            <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Provinsi" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Kode Pos</label>
+                            <input type="number" class="form-control" id="validationCustom01" minlength="4"
+                              placeholder="Kode Pos" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Mohon input data
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="number" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                -->
+                <div class="col-12">
+                  <button class="btn btn-success" type="submit">Submit form</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="container mt-3 footer">
+    <div class="col-2">
+      <p>&copy; 2022 Ao</p>
+    </div>
+  </section>
+
+  <!-- radio -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $("input[name='subject']").click(function () {
+      $("#othercountry").prop("disabled", true);
+      $('#othercountry').val("");
+      if ($(this).hasClass('otherCountry')) {
+        $("#othercountry").prop("disabled", false);
+      }
+    });
+  </script>
+  <gwmw style="display:none;">
+    <gwmw style="display:none;"></gwmw>
+  </gwmw>
+
+  <!-- Checkbox -->
+  <script>
+    function toggleEnable(id) {
+      var textbox = document.getElementById(id);
+
+      if (textbox.disabled) {
+        // If disabled, do this 
+        document.getElementById(id).disabled = false;
+      } else {
+        // Enter code here
+        document.getElementById(id).disabled = true;
+      }
+    }
+  </script>
+
+  <!-- Validator -->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+
+
+  <!-- <script src="asset/js/jquery-3.5.1.slim.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ef9e5793a4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
